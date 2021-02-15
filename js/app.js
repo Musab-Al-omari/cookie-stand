@@ -16,7 +16,7 @@ let Seattle = {
    cookiesPurchasedPerHour: function () {
 
       for (let i = 0; i < time.length - 1; i++) {
-         this.cookiesPerHour[i] = this.customersPerHour(this.maxHour, this.minHour) * this.avgSalesPerHour
+         this.cookiesPerHour[i] = this.customersPerHour(this.maxHour, this.minHour) * Math.ceil(this.avgSalesPerHour)
          // console.log(`${time[i]}:${this.cookiesPerHour[i]}`)
          this.total = this.total + this.cookiesPerHour[i]
       }
@@ -62,7 +62,7 @@ let Tokyo = {
    cookiesPurchasedPerHour: function () {
 
       for (let i = 0; i < time.length - 1; i++) {
-         this.cookiesPerHour[i] = this.customersPerHour(this.maxHour, this.minHour) * this.avgSalesPerHour
+         this.cookiesPerHour[i] = this.customersPerHour(this.maxHour, this.minHour) * Math.ceil(this.avgSalesPerHour)
          // console.log(`${time[i]}:${this.cookiesPerHour[i]}`)
          this.total = this.total + this.cookiesPerHour[i]
       }
@@ -108,7 +108,7 @@ let Dubai = {
    cookiesPurchasedPerHour: function () {
 
       for (let i = 0; i < time.length - 1; i++) {
-         this.cookiesPerHour[i] = this.customersPerHour(this.maxHour, this.minHour) * this.avgSalesPerHour
+         this.cookiesPerHour[i] = this.customersPerHour(this.maxHour, this.minHour) * Math.ceil(this.avgSalesPerHour)
          // console.log(`${time[i]}:${this.cookiesPerHour[i]}`)
          this.total = this.total + this.cookiesPerHour[i]
       }
@@ -154,7 +154,7 @@ let Paris = {
    cookiesPurchasedPerHour: function () {
 
       for (let i = 0; i < time.length - 1; i++) {
-         this.cookiesPerHour[i] = this.customersPerHour(this.maxHour, this.minHour) * this.avgSalesPerHour
+         this.cookiesPerHour[i] = this.customersPerHour(this.maxHour, this.minHour) * Math.ceil(this.avgSalesPerHour)
          // console.log(`${time[i]}:${this.cookiesPerHour[i]}`)
          this.total = this.total + this.cookiesPerHour[i]
       }
@@ -201,7 +201,7 @@ let Lima = {
    cookiesPurchasedPerHour: function () {
 
       for (let i = 0; i < time.length - 1; i++) {
-         this.cookiesPerHour[i] = this.customersPerHour(this.maxHour, this.minHour) * this.avgSalesPerHour
+         this.cookiesPerHour[i] = this.customersPerHour(this.maxHour, this.minHour) * Math.ceil(this.avgSalesPerHour)
          // console.log(`${time[i]}:${this.cookiesPerHour[i]}`)
          this.total = this.total + this.cookiesPerHour[i]
       }
