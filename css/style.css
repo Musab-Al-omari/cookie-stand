@@ -1,0 +1,52 @@
+body{
+    background-color: rgb(148, 175, 177);
+}
+header {
+    background-color: aqua;
+height: 175px;
+}
+
+header nav ul {
+    text-align: center;
+    margin-right: 10cm;
+}
+header nav ul li  {
+    margin-left: 5cm;
+    display: inline-block;
+    font-size: 50px;
+    margin-top: 5mm;
+}
+h1 {color: rgb(88, 49, 1);
+    font-size: 50px;
+    text-align: center;
+    margin-right: 4cm;
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+nav img{
+    float: left;
+}
+main{
+    text-align: center;
+}
+#XD{padding-top: 50px;
+    color: bisque;
+    display: block;
+    width: 500px;
+    padding-left: 600px;
+
+    
+}
+p{
+    font-size: 50px;
+}
+
+footer{
+    text-align: center;
+    background-color: cadetblue;
+}
+#table{
+    font-size: 30px;
+}
