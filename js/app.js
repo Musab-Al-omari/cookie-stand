@@ -272,6 +272,7 @@ Ugly.prototype.cookiesPurchasedPerHour = function () {
    return this.total;
 
 }
+
 let thefootFunction = function () {
    let footerRow = document.createElement('tr')
    tableEl.appendChild(footerRow)
@@ -279,20 +280,29 @@ let thefootFunction = function () {
    footerRow.appendChild(tdUculom)
    tdUculom.textContent = 'Totals'
 
-   let totalAll = 0;
-   var hourlyTotal = 0;
+   let grandTotal = 0;
 
-   for (let i = 0; i < time.length; i++) {
+   for (let i = 0; i < time.length - 1; i++) {
       let tdUculom = document.createElement('td')
       footerRow.appendChild(tdUculom)
 
-      for(let indx=0;indx<6;indx++){
-        
+      let totalClock = 0;
+
+      for (let j = 0; j < cities.length; j++) {
+         totalClock = totalClock + cities[j].cookiesPerHour[i]
       }
+
+      tdUculom.textContent = totalClock;
+      grandTotal += totalClock;
 
    }
 
+   let lastCell = document.createElement('td');
+   footerRow.appendChild(lastCell)
+      lastCell.textContent = grandTotal;
 }
+
+
 let headFunction = function () {
    // this is the header of the table 
 
@@ -392,10 +402,10 @@ const Lima = new Ugly(
    4.6,
 );
 
+let cities = [Seattle, Tokyo, Dubai, Paris, Lima]
+
 headFunction();
-Seattle.render();
-Tokyo.render();
-Dubai.render();
-Paris.render();
-Lima.render();
+for (let i = 0; i < cities.length; i++) {
+   cities[i].render();
+}
 thefootFunction();
