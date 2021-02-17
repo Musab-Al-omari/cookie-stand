@@ -50,3 +50,8 @@ footer{
 #table{
     font-size: 30px;
 }
+#buttom{
+    background-color: firebrick;
+    font-size: 30px;
+    color: gainsboro;
+}
