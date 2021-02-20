@@ -27,6 +27,7 @@ Ugly.prototype.cookiesPurchasedPerHour = function() {
     for (let i = 0; i < time.length - 1; i++) {
         this.avgSalesPerHour
         this.cookiesPerHour[i] = this.customersPerHour(this.maxHour, this.minHour) * this.avgSalesPerHour
+
         this.total = this.total + this.cookiesPerHour[i]
     }
     return this.total;
@@ -70,7 +71,7 @@ Ugly.prototype.render = function() {
     trData.appendChild(tdCulom)
     tdCulom.textContent = this.city
 
-    for (var i = 0; i < time.length; i++) {
+    for (let i = 0; i < time.length; i++) {
         tdCulom = document.createElement('td')
         trData.appendChild(tdCulom)
         tdCulom.textContent = this.cookiesPerHour[i];
@@ -103,6 +104,7 @@ let thefootFunction = function() {
 
         for (let j = 0; j < cities.length; j++) {
             totalClock = totalClock + cities[j].cookiesPerHour[i]
+            console.log(cities[j].cookiesPerHour[i]);
         }
 
         tdUculom.textContent = totalClock;
