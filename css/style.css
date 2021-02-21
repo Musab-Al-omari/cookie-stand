@@ -1,0 +1,159 @@
+body {
+    background-color: rgb(148, 175, 177);
+}
+
+header {
+    background-color: aqua;
+    height: 175px;
+}
+
+header nav ul {
+    text-align: center;
+    margin-right: 10cm;
+}
+
+header nav ul li {
+    margin-left: 5cm;
+    display: inline-block;
+    font-size: 50px;
+    margin-top: 5mm;
+}
+
+h1 {
+    color: rgb(88, 49, 1);
+    font-size: 50px;
+    text-align: center;
+    margin-right: 4cm;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav img {
+    float: left;
+}
+
+main {
+    text-align: center;
+}
+
+#XD {
+    padding-top: 50px;
+    color: bisque;
+    display: block;
+    width: 500px;
+    padding-left: 600px;
+}
+
+p {
+    font-size: 50px;
+}
+
+footer {
+    text-align: center;
+    background-color: cadetblue;
+}
+
+8 #table {
+    font-size: 30px;
+}
+
+#buttom {
+    background-color: firebrick;
+    font-size: 30px;
+    color: gainsboro;
+}
+
+
+/* labe 10 c */
+
+mark {
+    font-family: 'Ballet', cursive;
+}
+
+table tr th {
+    font-size: 20px;
+    font-family: Verdana;
+    color: aqua;
+}
+
+table tr td:first-child {
+    font-size: 30px;
+    color: brown;
+    font-family: Tahoma, sans-serif;
+}
+
+table tr td:nth-child(6) {
+    color: chartreuse;
+}
+
+table tr td:nth-child(2) {
+    color: chartreuse;
+}
+
+table tr td:nth-child(3) {
+    color: chartreuse;
+}
+
+table tr td:nth-child(4) {
+    color: chartreuse;
+}
+
+table tr td:nth-child(5) {
+    color: chartreuse;
+}
+
+table tr td:nth-child(7) {
+    color: chartreuse;
+}
+
+table tr td:nth-child(8) {
+    color: chartreuse;
+}
+
+table tr td:nth-child(9) {
+    color: chartreuse;
+}
+
+table tr td:nth-child(10) {
+    color: chartreuse;
+}
+
+table tr td:nth-child(11) {
+    color: chartreuse;
+}
+
+table tr td:nth-child(12) {
+    color: chartreuse;
+}
+
+table tr td:nth-child(13) {
+    color: chartreuse;
+}
+
+table tr td:nth-child(14) {
+    color: chartreuse;
+}
+
+table tr td:nth-child(15) {
+    color: chartreuse;
+}
+
+table tr td:nth-child(16) {
+    color: chartreuse;
+}
+
+table tr td:nth-child(17) {
+    color: crimson;
+}
+
+fieldset ul {
+    color: crimson;
+}
+
+fieldset ul input {
+    color: darkblue;
+    background-color: greenyellow;
+}
